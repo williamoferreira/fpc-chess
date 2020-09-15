@@ -5,7 +5,7 @@ unit enums.tipos;
 interface
 
 type
-  Tipo = (Peao, Torre, Cavalo, Bispo, Dama, Rei);
+  Tipo = (Peao ='P', Torre = 'T', Cavalo = 'C', Bispo = 'B', Dama = 'D', Rei = 'R');
 
 implementation
 

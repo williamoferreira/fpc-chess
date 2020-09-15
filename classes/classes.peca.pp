@@ -1,19 +1,22 @@
 unit classes.peca;
 
-
 {$mode objfpc}{$H+}
 
 interface
 
 uses
-  enums.cor, enums.tipos;
+  enums.cores, enums.tipos;
 
 type
   Peca = Class abstract
     protected
       PCor : Cor;
       PTipo : Tipo;
-    constructor Create(tipo: Tipo; cor: Cor)
+      constructor Create(tipo: Tipo; cor: Cor)
+      Function ToString: String; 
+    public 
+      property Cor: Cor read PCor;
+      property ToString: String read ToString; default;
   end;
 
 implementation
@@ -22,6 +25,11 @@ Constructor Peca.Create(tipo: Tipo; cor: Cor)
 begin
   self.PCor := cor;
   self.PTipo := tipo;
+end;
+
+function Peca.ToString: String;
+begin
+  Result := PCor;
 end;
 
 end.
