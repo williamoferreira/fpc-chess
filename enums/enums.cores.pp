@@ -1,4 +1,4 @@
-unit enums.cores
+unit enums.cores;
 
 {$mode objfpc}{$H+}
 
