@@ -30,7 +30,7 @@ end;
 
 function Peca.ToString: String;
 begin
-  Result := PCor;
+  Result := PTipo;
 end;
 
 end.

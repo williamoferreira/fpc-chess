@@ -5,7 +5,7 @@ unit enums.cores;
 interface
 
 type
-  Cor = (Branco, Preto);
+  Cor = (Branco = 'B', Preto = 'P');
 
 implementation
 
